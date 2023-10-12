@@ -13,9 +13,9 @@ let package = Package(
             name: "BNBSkin",
             targets: [
                 "BNBSkin",
-                "BNBSkinBNBSdkCoreTarget",
-                "BNBSkinBNBEffectPlayerTarget",
-                "BNBSkinBNBScriptingTarget"
+                "BNBSkinBNBSdkCore",
+                "BNBSkinBNBEffectPlayer",
+                "BNBSkinBNBScripting"
             ]
         ),
     ],
@@ -40,7 +40,7 @@ let package = Package(
             checksum: "0758db5deaa62dc5e75b24ff6e3ac1d4a46798a5e7b4decfd8462c88a2bbcee6"
         ),
         .target(
-            name: "BNBSkinBNBSdkCoreTarget",
+            name: "BNBSkinBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -49,7 +49,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBSkinBNBEffectPlayerTarget",
+            name: "BNBSkinBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -58,7 +58,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBSkinBNBScriptingTarget",
+            name: "BNBSkinBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
