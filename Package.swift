@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-13"
+let bnbPackageVersion: Version = "1.8.0-14"
 
 let package = Package(
     name: "BNBSkin",
@@ -13,9 +13,9 @@ let package = Package(
             name: "BNBSkin",
             targets: [
                 "BNBSkin_Target",
-                "BNBSkin_BNBSkin_Target",
-                "BNBSkin_BNBSkin_Target",
-                "BNBSkin_BNBSkin_Target"
+                "BNBSkin_BNBSdkCore_Target",
+                "BNBSkin_BNBEffectPlayer_Target",
+                "BNBSkin_BNBScripting_Target"
             ]
         ),
     ],
